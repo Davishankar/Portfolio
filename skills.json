@@ -1,0 +1,85 @@
+[
+
+    {
+        "name": "Computer Networks",
+        "icon": "https://img.icons8.com/?size=100&id=uEnXkP73YCdC&format=png&color=000000"
+    },
+    {
+        "name": "Cloud Security",
+        "icon": "https://img.icons8.com/?size=100&id=zvbDY1HCq5gd&format=png&color=000000"
+    },
+    {
+        "name": "Identity & Access Management",
+        "icon": "https://img.icons8.com/?size=100&id=undefined&format=png&color=000000"
+    }, 
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "Qualys",
+        "icon": "https://www.logicgate.com/wp-content/smush-webp/plt-qualys-01-hero-01.png.webp"
+    },
+    {
+        "name": "Mimecast",
+        "icon": "https://awsmp-logos.s3.amazonaws.com/seller-cehqfpdesqyve/d013b7b8ea5fe358c7c86708011463eb.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
+    },
+    {
+        "name": "Netskope",
+        "icon": "https://www.netskope.com/wp-content/themes/netskope/images/v3/logo.svg"
+    },
+    {
+        "name": "Docker",
+        "icon": "https://img.icons8.com/?size=100&id=22813&format=png&color=000000"
+    },
+    {
+        "name": "Crowdstrike",
+        "icon": "https://www.hashicorp.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F2885%2F1728683045-falcon-logo-square-transparent.png&w=828&q=75"
+    },
+    {
+        "name": "SQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "Data Loss Prevention",
+        "icon": "https://img.icons8.com/?size=100&id=undefined&format=png&color=000000"
+    },
+    {
+        "name": "Risk Management",
+        "icon": "https://img.icons8.com/?size=100&id=n3uvOtPOY6Kd&format=png&color=000000"
+    },
+    {
+        "name": "Governance Risk & Compliance",
+        "icon": "https://img.icons8.com/?size=100&id=4rdwV21IxYVR&format=png&color=000000"
+    },
+    {
+        "name": "Incident Response",
+        "icon": "https://img.icons8.com/?size=100&id=cauJjnZ1GsCG&format=png&color=000000"
+    },
+    {
+        "name": "Endpoint Detection & Response",
+        "icon": "https://img.icons8.com/?size=100&id=Kp3rKjBdoB5B&format=png&color=000000"
+    },
+    {
+        "name": "Microsoft Office",
+        "icon": "https://img.icons8.com/?size=100&id=AxYvjjMSvd4s&format=png&color=000000"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    }, 
+    {
+        "name": "Vulnerability Assessment",
+        "icon": "https://img.icons8.com/?size=100&id=hmwmF4Sam3tz&format=png&color=000000"
+    }
+    
+]
+    
