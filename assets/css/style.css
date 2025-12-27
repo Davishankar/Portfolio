@@ -471,6 +471,10 @@ header .navbar ul li a:hover {
 /* about section ends */
 
 /* skills section starts */
+
+
+
+/* skills section starts */
 .skills {
   min-height: 90vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
@@ -493,38 +497,62 @@ header .navbar ul li a:hover {
 .skills .container .row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  flex-wrap: wrap;
-  gap: 1.8rem;
+  gap: 1.8rem;         /* flex-wrap removed (grid doesn’t need it) */
 }
+
 .skills .container .bar {
-  margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 22, 0.9);
   transition: 0.2s;
+
+  /* NEW: keep all cards same height */
+  min-height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .skills .container .bar:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
   background-color: rgba(0, 0, 0, 0.9) !important;
 }
+
 .skills .container .bar .info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 0;       /* NEW: remove shifting */
 }
+
+/* NEW: force icon to a consistent size + always visible */
+.skills .container .bar .info img {
+  width: 5.2rem;
+  height: 5.2rem;
+  object-fit: contain;
+  display: block;
+
+  /* “badge” so dark icons don’t disappear */
+  padding: 0.6rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1rem;
+}
+
 .skills .container .bar .info i {
   font-size: 4rem;
 }
+
 .skills .container .bar .info span {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins";
-  margin-left: 0.5rem;
+  margin-left: 0;      /* NEW: center properly */
+  text-align: center;  /* NEW */
 }
-/* skills media queries starts*/
+
+/* skills media queries starts */
 @media screen and (max-width: 600px) {
   .skills .container {
     padding: 0;
@@ -541,6 +569,11 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 }
+/* skills media queries ends */
+
+
+
+
 /* skills media queries ends*/
 /* skills section ends */
 
