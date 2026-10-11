@@ -405,6 +405,17 @@ header .navbar ul li a:hover {
   font-weight: 600;
   text-transform: none;
 }
+.about .row .content p.certs {
+  margin-top: 0.8rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2506ad;
+  letter-spacing: 0.02rem;
+}
+.about .row .content p strong {
+  font-weight: 700;
+  color: #020133;
+}
 .about .row .content .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -420,6 +431,9 @@ header .navbar ul li a:hover {
 }
 .resumebtn {
   margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 .resumebtn .btn {
   padding: 1.7rem 3rem;
@@ -445,6 +459,82 @@ header .navbar ul li a:hover {
 }
 .resumebtn .btn:hover i {
   transform: translateX(5px);
+}
+.resumebtn .btn-outline {
+  color: #2506ad;
+  background: transparent;
+  border: 0.2rem solid #2506ad;
+  box-shadow: none;
+}
+.resumebtn .btn-outline:hover {
+  color: #fff;
+  background: #2506ad;
+}
+.resumebtn .btn-outline:hover i {
+  transform: translateY(3px);
+}
+
+/* resume viewer modal */
+.resume-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+.resume-modal[hidden] {
+  display: none;
+}
+.resume-modal-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 90rem;
+  height: 100%;
+  max-height: 95vh;
+  background: #fff;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+}
+.resume-modal-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: #0e2431;
+  color: #fff;
+}
+.resume-modal-bar h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.resume-modal-actions {
+  display: flex;
+  gap: 1.5rem;
+}
+.resume-modal-actions a,
+.resume-modal-actions button {
+  font-size: 1.8rem;
+  color: #fff;
+  background: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.resume-modal-actions a:hover,
+.resume-modal-actions button:hover {
+  color: #ffae00;
+}
+.resume-modal iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
+body.modal-open {
+  overflow: hidden;
 }
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
@@ -898,6 +988,22 @@ header .navbar ul li a:hover {
 }
 .experience .content .desc p {
   font-size: 1.2rem;
+}
+.experience .content .desc ul {
+  margin: 1rem 1.5rem 0.5rem 0;
+  padding-left: 1.8rem;
+  list-style: disc;
+}
+.experience .content .desc li {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #020133;
+  text-transform: none;
+  margin-bottom: 0.6rem;
+}
+.experience .content .desc li strong {
+  font-weight: 800;
 }
 /* view all button */
 .morebtn {

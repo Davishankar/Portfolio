@@ -40,6 +40,34 @@ $(document).ready(function () {
         }
     });
 
+    // resume viewer: modal on desktop, native PDF viewer (new tab) on small screens
+    const resumeModal = $('#resume-modal');
+    const resumeFrame = $('#resume-frame');
+
+    function closeResume() {
+        resumeModal.attr('hidden', true);
+        $('body').removeClass('modal-open');
+    }
+
+    $('#view-resume').on('click', function (e) {
+        if (window.innerWidth < 768) return;
+        e.preventDefault();
+        if (!resumeFrame.attr('src')) {
+            resumeFrame.attr('src', $(this).attr('href') + '#view=FitH');
+        }
+        resumeModal.removeAttr('hidden');
+        $('body').addClass('modal-open');
+        $('#resume-close').trigger('focus');
+    });
+
+    $('#resume-close').on('click', closeResume);
+    resumeModal.on('click', function (e) {
+        if (e.target === this) closeResume();
+    });
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape' && !resumeModal.is('[hidden]')) closeResume();
+    });
+
     // emailjs contact form
     $("#contact-form").submit(function (event) {
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
@@ -70,7 +98,7 @@ document.addEventListener('visibilitychange', function () {
 
 // typed.js effect (this is only the typing text, not fade)
 var typed = new Typed(".typing-text", {
-    strings: ["SOC", "Cybersecurity Engineering", "Network Security", "Cloud Security", "Governance Risk &amp; Compliance", "Information Security"],
+    strings: ["Penetration Testing", "SOC", "Cybersecurity Engineering", "Network Security", "Cloud Security", "Governance Risk &amp; Compliance", "Information Security"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
