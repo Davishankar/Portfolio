@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Davishankar's Portfolio." />
+    <meta name="description" content="Davishankar Gaur, security engineer: SOC operations, incident response, vulnerability management, cloud security, GRC and offensive security. CISSP (Associate), AWS Security Specialty, Security+." />
+    <meta name="theme-color" content="#0A0E14">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css?v=2">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css?v=6">
 
     <!-- Favicon -->
     <link id="favicon" rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
@@ -21,490 +27,370 @@
 </head>
 <body oncontextmenu="return false">
 
+<!-- ambient background: drifting glow, grid with a cursor spotlight, grain -->
+<div class="bg-fx" aria-hidden="true">
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+    <div class="bg-orb orb-c"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-grid bg-grid-glow"></div>
+    <div class="bg-grain"></div>
+</div>
+
 <!-- navbar starts -->
 <header>
-    <a href="/" class="logo"><i class="fab fa-node-js"></i> Davishankar </a>
+    <a href="#home" class="logo"><span class="logo-mark">~/</span>davishankar</a>
 
-    <div id="menu" class="fas fa-bars"></div>
+    <button type="button" id="menu" class="fas fa-bars" aria-label="Toggle menu"></button>
     <nav class="navbar">
         <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Achievenment</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 </header>
 <!-- navbar ends -->
 
 <!-- hero section starts -->
 <section class="home" id="home">
-    <div id="particles-js"></div>
+    <div class="wrap hero-grid">
+        <div class="content">
+            <p class="eyebrow"><span class="sr-only">Who am I</span><span aria-hidden="true"><span class="ps1">$</span> <span class="type">whoami</span><span class="caret"></span></span></p>
+            <h1>Davishankar Gaur</h1>
+            <p class="lede">Security engineer working across SOC operations, incident response, and offensive security.</p>
+            <p class="typing-line"><span class="prompt">&gt; interested_in:</span> <span class="typing-text"></span></p>
 
-    <div class="content">
-        <h2>Hi There,<br/> I'm Davishankar <span>Gaur</span></h2>
-        <p>I am interested in <span class="typing-text"></span></p>
-        <a href="#about" class="btn">
-            <span>About Me</span>
-            <i class="fas fa-arrow-circle-down"></i>
-        </a>
+            <div class="hero-actions">
+                <a href="./assets/resume/Davishankar_Gaur_Resume.pdf" target="_blank" rel="noopener"
+                   class="btn btn-primary js-view-resume">
+                    <i class="fas fa-file-alt"></i> View Resume
+                </a>
+                <a href="#contact" class="btn btn-ghost">
+                    Get in touch <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
 
-        <div class="socials">
             <ul class="social-icons">
-                <li><a class="linkedin" aria-label="LinkedIn"
-                       href="https://www.linkedin.com/in/davishankargaur/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a class="github" aria-label="GitHub"
-                       href="https://github.com/Davishankar" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a class="twitter" aria-label="Twitter"
-                       href="https://x.com/buggingme10" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="instagram" aria-label="Instagram"
-                       href="https://www.facebook.com/davishankar.gaur/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/davishankargaur/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a aria-label="GitHub" href="https://github.com/Davishankar" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+                <li><a aria-label="Twitter / X" href="https://x.com/buggingme10" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
+                <li><a aria-label="Facebook" href="https://www.facebook.com/davishankar.gaur/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
             </ul>
+        </div>
+
+        <div class="image">
+            <div class="scan-frame">
+                <img draggable="false" src="./assets/images/profile-hero.jpg" alt="Davishankar Gaur" />
+                <span class="corner tl"></span><span class="corner tr"></span>
+                <span class="corner bl"></span><span class="corner br"></span>
+                <span class="scan-label">access: granted</span>
+            </div>
         </div>
     </div>
 
-    <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="Profile" />
+    <div class="wrap">
+        <ul class="stats">
+            <li><strong>1st</strong><span>NCAE Cyber Games<br>Northeast Region</span></li>
+            <li><strong data-count="80" data-suffix="+">80+</strong><span>critical CVEs remediated</span></li>
+            <li><strong data-count="500" data-suffix="+">500+</strong><span>endpoints secured</span></li>
+            <li><strong>0</strong><span>major ISO 27001 audit findings</span></li>
+        </ul>
     </div>
 </section>
 <!-- hero section ends -->
 
 <!-- about section starts -->
 <section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    <div class="wrap">
+        <h2 class="heading"><span class="sr-only">About</span><span aria-hidden="true"><span class="ps1">$</span> <span class="type">cat <span class="arg">about.md</span></span><span class="caret"></span></span></h2>
 
-    <div class="row">
-        <div class="image">
-            <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="Profile" />
-        </div>
+        <div class="about-grid">
+            <aside class="fact-card">
+                <h3>Davishankar Gaur</h3>
+                <p class="role">Security Engineer · SOC &amp; Offensive Security</p>
+                <dl>
+                    <dt>Currently</dt>
+                    <dd>Member of Technical Staff, Seceon</dd>
+                    <dt>Location</dt>
+                    <dd>USA</dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:davishankar9822@gmail.com">davishankar9822@gmail.com</a></dd>
+                </dl>
+                <ul class="cert-badges">
+                    <li>CISSP <span>Associate of ISC2</span></li>
+                    <li>AWS Security <span>Specialty · SCS-C03</span></li>
+                    <li>Security+ <span>CompTIA</span></li>
+                </ul>
+            </aside>
 
-        <div class="content">
-            <h3>Davishankar Gaur</h3>
-            <span class="tag">Security Engineer · SOC &amp; Offensive Security</span>
-            <p class="certs">CISSP (Associate of ISC2) · AWS Certified Security – Specialty (SCS-C03) · CompTIA Security+</p>
-            <p>
-                I’m a security engineer who likes understanding a system end to end: how it gets attacked, how you
-                catch it, and how it recovers. At Seceon, I work in the SOC triaging live alerts, escalating real
-                threats, and helping shape our incident response playbooks, then turn around and harden the product
-                itself. I’ve remediated <strong>30+ critical CVEs</strong> and rebuilt our backup and disaster recovery
-                automation across <strong>20+ servers</strong>, with restore tests to prove it actually works.
-            </p>
-            <p>
-                Before that, Tavant taught me that security is as much people and process as it is tooling. I rolled
-                out Qualys, CrowdStrike, Netskope, and Mimecast across <strong>500+ endpoints</strong> for vulnerability
-                management, EDR, and email and cloud security, ran phishing training that cut click-through by
-                <strong>18%</strong>, and coordinated ISO 27001 audits that closed with
-                <strong>zero major nonconformities</strong>.
-            </p>
-            <p>
-                On the offensive side, I train on TryHackMe, PortSwigger, and PentesterLab, and I’m preparing for the
-                OSCP+. Thinking like an attacker makes me a better defender, and it’s how my university team took
-                <strong>1st at the NCAE Cyber Games Northeast regionals</strong>, then finished
-                <strong>5th of 90+ teams</strong> at nationals.
-                Whether it’s detection and response, cloud security, GRC, or penetration testing, I’m happiest when I
-                understand how something fails and get to make it stronger.
-            </p>
+            <div class="content">
+                <p>
+                    I’m a security engineer who likes understanding a system end to end: how it gets attacked, how you
+                    catch it, and how it recovers. At Seceon, I work in the SOC triaging live alerts, escalating real
+                    threats, and helping shape our incident response playbooks, then turn around and harden the product
+                    itself. I’ve remediated <strong>80+ critical CVEs</strong> and rebuilt our backup and disaster recovery
+                    automation across <strong>20+ servers</strong>, with restore tests to prove it actually works.
+                </p>
+                <p>
+                    Before that, Tavant taught me that security is as much people and process as it is tooling. I rolled
+                    out Qualys, CrowdStrike, Netskope, and Mimecast across <strong>500+ endpoints</strong> for vulnerability
+                    management, EDR, and email and cloud security, ran phishing training that cut click-through by
+                    <strong>18%</strong>, and coordinated ISO 27001 audits that closed with
+                    <strong>zero major nonconformities</strong>.
+                </p>
+                <p>
+                    On the offensive side, I train on TryHackMe, PortSwigger, and PentesterLab, and I’m preparing for the
+                    OSCP+. Thinking like an attacker makes me a better defender, and it’s how my university team took
+                    <strong>1st at the NCAE Cyber Games Northeast regionals</strong>, then finished
+                    <strong>5th of 90+ teams</strong> at nationals.
+                    Whether it’s detection and response, cloud security, GRC, or penetration testing, I’m happiest when I
+                    understand how something fails and get to make it stronger.
+                </p>
 
-            <div class="box-container">
-                <div class="box">
-                    <p><span> email : </span> davishankar9822@gmail.com</p>
-                    <p><span> place : </span> USA</p>
+                <div class="resumebtn">
+                    <a href="./assets/resume/Davishankar_Gaur_Resume.pdf" target="_blank" rel="noopener"
+                       class="btn btn-primary js-view-resume">
+                        <i class="fas fa-file-alt"></i> View Resume
+                    </a>
+                    <a href="./assets/resume/Davishankar_Gaur_Resume.pdf" download="Davishankar_Gaur_Resume.pdf"
+                       class="btn btn-ghost">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
                 </div>
-            </div>
-
-            <div class="resumebtn">
-                <a href="./assets/resume/Davishankar_Gaur_Resume.pdf" target="_blank" rel="noopener"
-                   class="btn" id="view-resume">
-                    <span>View Resume</span>
-                    <i class="fas fa-file-alt"></i>
-                </a>
-                <a href="./assets/resume/Davishankar_Gaur_Resume.pdf" download="Davishankar_Gaur_Resume.pdf"
-                   class="btn btn-outline">
-                    <span>Download</span>
-                    <i class="fas fa-download"></i>
-                </a>
             </div>
         </div>
     </div>
 </section>
 <!-- about section ends -->
 
-<!-- skills section starts -->
-<section class="skills" id="skills">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-
-    <div class="container">
-        <div class="row" id="skillsContainer">
-            <!-- Filled dynamically from skills.json -->
-        </div>
-    </div>
-</section>
-<!-- skills section ends -->
-
-<!-- education section starts -->
-<section class="education" id="education">
-    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-    <!--<p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p> -->
-
-    <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img draggable="false" src="./assets/images/educat/boston.webp" alt="Boston University" />
-            </div>
-            <div class="content">
-                <h3>Master of Science | Computer Science with Specialisation in Cybersecurity</h3>
-                <p>Boston University, Massachusetts, USA</p>
-                <h4>2023-2025 | Completed </h4>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img draggable="false" src="./assets/images/educat/maxresdefault.jpg" alt="KKW" />
-            </div>
-            <div class="content">
-                <h3>Bachelor of Technology | Computer Science and Engineering</h3>
-                <p>Vellore Institute of Technology, Vellore, India</p>
-                <h4>2016-2020 | Completed</h4>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- education section ends -->
-
-<!-- Achievements section (work) starts -->
-<section class="work" id="work">
-  <h2 class="heading"><i class="fas fa-trophy"></i> Achievenment <span>Earned</span></h2>
-
-  <div class="box-container">
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/CISSP.png" alt="Associate of (ISC)2 – CISSP" />
-      <div class="content">
-        <div class="tag">
-          <h3>Certified Information Systems Security Professional (CISSP)</h3>
-        </div>
-        <div class="desc">
-          <p>Associate of ISC2 after clearing the CISSP exam.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/Comptia.png" alt="Security+" />
-      <div class="content">
-        <div class="tag">
-          <h3>Comptia Security+</h3>
-        </div>
-        <div class="desc">
-          <p>Cleared the Security+ exam.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/NCAE Regional.png" alt="NCAE Cybergames" />
-      <div class="content">
-        <div class="tag">
-          <h3>NCAE Cybergames</h3>
-        </div>
-        <div class="desc">
-          <p>Participated in NCAE Cybergames representing Boston University in a team of 8 people. Finished 1st in the Northeast region and came 5th nationwide.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/AWS Certified Security.png" alt="AWS Certified Security" />
-      <div class="content">
-        <div class="tag">
-          <h3>AWS Certified Security - Specialty (SCS-C03)</h3>
-        </div>
-        <div class="desc">
-          <p>Passed the latest version of the AWS Certified Security – Specialty exam (SCS-C03).</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/any.png" alt="Shining Star Award" />
-      <div class="content">
-        <div class="tag">
-          <h3>Shining Star Award</h3>
-        </div>
-        <div class="desc">
-          <p>Received an award at Tavant for excellent contribution to the Information Security team.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- Achievements section (work) ends -->
-
 <!-- experience section starts -->
 <section class="experience" id="experience">
+    <div class="wrap">
+        <h2 class="heading"><span class="sr-only">Experience</span><span aria-hidden="true"><span class="ps1">$</span> <span class="type">cat <span class="arg">experience.log</span></span><span class="caret"></span></span></h2>
 
-    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
-    <div class="timeline">
-
-        <div class="container left">
-            <div class="content">
-                <div class="tag">
-                    <h2>Seceon Inc.</h2>
-                </div>
-                <div class="desc">
+        <ol class="timeline">
+            <li class="entry">
+                <p class="when">Feb 2026 – Present</p>
+                <div class="card">
                     <h3>Member of Technical Staff</h3>
-                    <p>Westford, MA · Feb 2026 – Present</p>
+                    <p class="where">Seceon Inc. <span>· Westford, MA</span></p>
                     <ul>
                         <li>Triage and escalate live alerts in the SOC, and contribute to incident response workflows and playbooks.</li>
-                        <li>Remediated <strong>30+ critical CVEs</strong> across company products, reducing exposure to known exploits.</li>
+                        <li>Remediated <strong>80+ critical CVEs</strong> across company products, reducing exposure to known exploits.</li>
                         <li>Overhauled backup and disaster recovery, writing 2 new scripts and refactoring 4 to automate secure daily backups across <strong>20+ servers</strong>, verified through restore testing.</li>
                         <li>Built network monitoring for endpoint tracking, device fingerprinting, and asset visibility; support customer onboarding and test new platform features.</li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </li>
 
-        <div class="container right">
-            <div class="content">
-                <div class="tag">
-                    <h2>Seceon Inc.</h2>
-                </div>
-                <div class="desc">
+            <li class="entry">
+                <p class="when">Jun 2024 – Aug 2024</p>
+                <div class="card">
                     <h3>Cybersecurity Analyst Intern</h3>
-                    <p>Westford, MA · Jun 2024 – Aug 2024</p>
+                    <p class="where">Seceon Inc. <span>· Westford, MA</span></p>
                     <ul>
                         <li>Wrote 6 knowledge base articles and designed chatbot integrations that resolved <strong>50+ customer inquiries a week</strong>.</li>
                         <li>Built a RESTful API in Python and Flask to improve application performance and user experience.</li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </li>
 
-        <div class="container left">
-            <div class="content">
-                <div class="tag">
-                    <h2>Tavant Technologies</h2>
-                </div>
-                <div class="desc">
+            <li class="entry">
+                <p class="when">Dec 2020 – Aug 2022</p>
+                <div class="card">
                     <h3>Information Security Analyst</h3>
-                    <p>Noida, India · Dec 2020 – Aug 2022</p>
+                    <p class="where">Tavant Technologies <span>· Noida, India</span></p>
                     <ul>
                         <li>Deployed and tuned Qualys, CrowdStrike, Netskope, and Mimecast across <strong>500+ endpoints</strong>, cutting vulnerability remediation time by <strong>25%</strong>.</li>
                         <li>Led a phishing awareness program with IT and HR that trained 200+ employees and cut click-through by <strong>18%</strong>.</li>
                         <li>Coordinated ISO 27001 internal and external audits with <strong>zero major nonconformities</strong>, and built Python compliance reporting that cut audit prep time by 25%.</li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </li>
 
-        <div class="container right">
-            <div class="content">
-                <div class="tag">
-                    <h2>Symantec / Broadcom</h2>
-                </div>
-                <div class="desc">
+            <li class="entry">
+                <p class="when">Jun 2019 – Jul 2019</p>
+                <div class="card">
                     <h3>Undergraduate Intern</h3>
-                    <p>Mumbai, India · Jun 2019 – Jul 2019</p>
+                    <p class="where">Symantec / Broadcom <span>· Mumbai, India</span></p>
                     <ul>
                         <li>Completed 5 advanced Symantec courses in email security and data loss prevention.</li>
                         <li>Updated outdated infrastructure documentation and policies, saving senior analysts 1.5 hours a week.</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-
-    </div> <!-- end .timeline -->
+            </li>
+        </ol>
+    </div>
 </section>
 <!-- experience section ends -->
 
 <!-- projects section starts -->
-<section class="work" id="projects">
-  <h2 class="heading"><i class="fas fa-code"></i> Featured <span>Projects</span></h2>
+<section class="projects" id="projects">
+    <div class="wrap">
+        <h2 class="heading"><span class="sr-only">Projects</span><span aria-hidden="true"><span class="ps1">$</span> <span class="type">ls <span class="arg">~/projects</span></span><span class="caret"></span></span></h2>
 
-  <div class="box-container">
+        <div class="project-grid">
+            <article class="project">
+                <h3>MLOps Network Security Threat Detection</h3>
+                <p>
+                    Full MLOps pipeline for phishing and network threat detection: data ingestion, validation,
+                    transformation, training, MLflow tracking, batch prediction, and deployment with Docker,
+                    GitHub Actions CI/CD, and AWS (S3 + EC2).
+                </p>
+                <ul class="tags"><li>MLflow</li><li>Docker</li><li>GitHub Actions</li><li>AWS</li></ul>
+                <a href="https://github.com/whitedevil7321/-MLOPS-Network_Security_System/blob/master/README.md" target="_blank" rel="noopener" class="link">Read more <i class="fas fa-arrow-right"></i></a>
+            </article>
 
-   <!-- MLOps Network Security System -->
-    <div class="box tilt">
-      <div class="content">
-        <div class="tag">
-          <h3>MLOps Network Security Threat Detection</h3>
+            <article class="project">
+                <h3>Data Loss Prevention using Machine Learning</h3>
+                <p>
+                    Developed a web application incorporating integrated defenses against SQLi attacks, including
+                    encryption, session timeouts configured to 30 minutes, and robust brute-force protection.
+                </p>
+                <ul class="tags"><li>SQLi defense</li><li>Encryption</li><li>Brute-force protection</li></ul>
+                <a href="https://drive.google.com/file/d/1A5bWrbszxdpsfaPefamv7rmNjVYGKZQc/view?usp=sharing" target="_blank" rel="noopener" class="link">Read more <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <article class="project">
+                <h3>Log4j Vulnerability Scanner (CVE-2021-44228)</h3>
+                <p>
+                    Designed a Log4j vulnerability scanner that detected susceptibility on test servers with
+                    simulated vulnerabilities.
+                </p>
+                <ul class="tags"><li>CVE-2021-44228</li><li>Vulnerability scanning</li></ul>
+                <a href="https://drive.google.com/file/d/1m_OoIhJyopyIlFew-0z1uol78H2ohmxI/view?usp=sharing" target="_blank" rel="noopener" class="link">Read more <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <article class="project">
+                <h3>Malware Detection using Machine Learning</h3>
+                <p>
+                    Trained a classifier achieving upwards of 90% detection accuracy on malicious executables,
+                    using features including MD5 hashes and entropy.
+                </p>
+                <ul class="tags"><li>Machine learning</li><li>Malware analysis</li></ul>
+                <a href="https://drive.google.com/file/d/1wmih1EFAdj9h7uY9N_cH1Lzsonk-9Bl2/view?usp=sharing" target="_blank" rel="noopener" class="link">Read more <i class="fas fa-arrow-right"></i></a>
+            </article>
         </div>
-        <div class="desc">
-          <p>
-            Full MLOps pipeline for phishing / network threat detection with data ingestion, validation,
-            transformation, training, MLflow tracking, batch prediction, Docker, CI/CD (GitHub Actions)
-            and AWS (S3 + EC2) deployment.
-          </p>
-          <div class="btns">
-            <a href="https://github.com/whitedevil7321/-MLOPS-Network_Security_System/blob/master/README.md" class="btn" target="_blank">
-              <i class="fas fa-eye"></i> Read More
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
-
-
-    <!-- AWS SageMaker Mobile Price Classification -->
-    <div class="box tilt">
-      <div class="content">
-        <div class="tag">
-          <h3>Data Loss Prevention using Machine Learning</h3>
-        </div>
-        <div class="desc">
-          <p>
-            Developed a web application incorporating integrated defenses against SQLi
-            attacks, including encryption, session timeouts configured to 30 minutes, and robust brute-force protection protocols.
-          </p>
-          <div class="btns">
-            <a href="https://drive.google.com/file/d/1A5bWrbszxdpsfaPefamv7rmNjVYGKZQc/view?usp=sharing" class="btn" target="_blank">
-              <i class="fas fa-eye"></i> Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-    <!-- MONOGPT - LLM from Scratch -->
-    <div class="box tilt">
-      <div class="content">
-        <div class="tag">
-          <h3>Log4j Vulnerability Scanner (CVE-2021-44228)</h3>
-        </div>
-        <div class="desc">
-          <p>
-            Spearheaded the design of a Log4j Vulnerability scanner
-            that detected susceptibility on test servers with simulated vulnerabilities.
-          </p>
-          <div class="btns">
-            <a href="https://drive.google.com/file/d/1m_OoIhJyopyIlFew-0z1uol78H2ohmxI/view?usp=sharing" class="btn" target="_blank">
-              <i class="fas fa-eye"></i> Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Self-Driving Car -->
-    <div class="box tilt">
-      <div class="content">
-        <div class="tag">
-          <h3>Malware Detection using Machine Learning</h3>
-        </div>
-        <div class="desc">
-          <p>
-            Trained a classifier achieving upwards of 90% detection accuracy
-            on malicious executables (features included MD5, entropy).
-          </p>
-          <div class="btns">
-            <a href="https://drive.google.com/file/d/1wmih1EFAdj9h7uY9N_cH1Lzsonk-9Bl2/view?usp=sharing" class="btn" target="_blank">
-              <i class="fas fa-eye"></i> Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
 </section>
 <!-- projects section ends -->
 
-<!-- contact section starts
+<!-- skills section starts -->
+<section class="skills" id="skills">
+    <div class="wrap">
+        <h2 class="heading"><span class="sr-only">Skills &amp; tools</span><span aria-hidden="true"><span class="ps1">$</span> <span class="type">tree <span class="arg">~/skills</span></span><span class="caret"></span></span></h2>
+
+        <div class="skill-groups" id="skillsContainer">
+            <!-- Filled dynamically from skills.json -->
+        </div>
+    </div>
+</section>
+<!-- skills section ends -->
+
+<!-- certifications section starts -->
+<section class="certifications" id="certifications">
+    <div class="wrap">
+        <h2 class="heading"><span class="sr-only">Certifications &amp; awards</span><span aria-hidden="true"><span class="ps1">$</span> <span class="type">ls <span class="arg">~/achievements</span></span><span class="caret"></span></span></h2>
+
+        <div class="cert-grid">
+            <article class="cert">
+                <i class="fas fa-shield-alt"></i>
+                <p class="issuer">ISC2 · Jun 2025</p>
+                <h3>CISSP (Associate of ISC2)</h3>
+                <p>Passed the Certified Information Systems Security Professional exam.</p>
+            </article>
+            <article class="cert">
+                <i class="fab fa-aws"></i>
+                <p class="issuer">Amazon Web Services · Jan 2026</p>
+                <h3>AWS Certified Security – Specialty</h3>
+                <p>Passed the latest version of the exam (<span class="nowrap">SCS-C03</span>).</p>
+            </article>
+            <article class="cert">
+                <i class="fas fa-certificate"></i>
+                <p class="issuer">CompTIA · Dec 2024</p>
+                <h3>CompTIA Security+</h3>
+                <p>Passed the Security+ exam.</p>
+            </article>
+            <article class="cert">
+                <i class="fas fa-trophy"></i>
+                <p class="issuer">NCAE Cyber Games</p>
+                <h3>1st Place, Northeast Regionals</h3>
+                <p>Represented Boston University in a team of 8; went on to finish 5th of 90+ teams at nationals.</p>
+            </article>
+            <article class="cert">
+                <i class="fas fa-star"></i>
+                <p class="issuer">Tavant Technologies · Jun 2022</p>
+                <h3>Shining Star Award</h3>
+                <p>Recognized for excellent contribution to the Information Security team.</p>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- certifications section ends -->
+
+<!-- education section starts -->
+<section class="education" id="education">
+    <div class="wrap">
+        <h2 class="heading"><span class="sr-only">Education</span><span aria-hidden="true"><span class="ps1">$</span> <span class="type">cat <span class="arg">education.txt</span></span><span class="caret"></span></span></h2>
+
+        <div class="edu-list">
+            <article class="edu">
+                <img draggable="false" src="./assets/images/educat/boston.webp" alt="Boston University" />
+                <div>
+                    <p class="when">2023 – 2025</p>
+                    <h3>M.S. in Computer Science, Cybersecurity specialization</h3>
+                    <p>Boston University · Massachusetts, USA</p>
+                </div>
+            </article>
+            <article class="edu">
+                <img draggable="false" src="./assets/images/educat/maxresdefault.jpg" alt="Vellore Institute of Technology" />
+                <div>
+                    <p class="when">2016 – 2020</p>
+                    <h3>B.Tech. in Computer Science and Engineering</h3>
+                    <p>Vellore Institute of Technology · Vellore, India</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- education section ends -->
+
+<!-- contact section starts -->
 <section class="contact" id="contact">
-    <h2 class="heading"><i class="fas fa-headset"></i> <span>Contact</span> Me</h2>
-    <div class="container">
-        <div class="content">
-            <div class="image-box">
-                <img src="./assets/images/contact1.png" alt="contact" />
-            </div>
-
-            <form id="contact-form">
-                <div class="form-group">
-                    <div class="field">
-                        <input type="text" name="from_name" placeholder="Your Name" required>
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="field">
-                        <input type="email" name="reply_to" placeholder="Your Email" required>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="field">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <i class="fas fa-tag"></i>
-                    </div>
-                    <div class="message">
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <i class="fas fa-comment-dots"></i>
-                    </div>
-                </div>
-                <div class="button-area">
-                    <button type="submit">
-                        Submit <i class="fa fa-paper-plane"></i>
-                    </button>
-                    <span></span>
-                </div>
-            </form>
+    <div class="wrap">
+        <h2 class="heading"><span class="sr-only">Contact</span><span aria-hidden="true"><span class="ps1">$</span> <span class="type">./contact.sh</span><span class="caret"></span></span></h2>
+        <p class="contact-lede">
+            Open to security engineering, SOC, cloud security, GRC, and offensive security roles.
+            The fastest way to reach me is email or LinkedIn.
+        </p>
+        <div class="contact-actions">
+            <a href="mailto:davishankar9822@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> davishankar9822@gmail.com</a>
+            <a href="https://www.linkedin.com/in/davishankargaur/" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://github.com/Davishankar" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </div>
 </section>
-contact section ends -->
+<!-- contact section ends -->
 
-<!-- footer section starts -->
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>Portfolio</h3>
-            <p>Thank you for visiting my personal website. Would love to connect over socials.</p>
-        </div>
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-            <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-            <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-            <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-            <a href="#work"><i class="fas fa-chevron-circle-right"></i> Achievenment</a>
-            <a href="#projects"><i class="fas fa-chevron-circle-right"></i> projects</a>
-            <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-            <a href="#contact"><i class="fas fa-chevron-circle-right"></i> contact</a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <!-- <p><i class="fas fa-phone"></i>+1 (978)-349-8671</p>
-            <p><i class="fas fa-envelope"></i>davishankar9822@gmail.com</p>
-            <p><i class="fas fa-map-marked-alt"></i>Illinois , USA</p> -->
-            <div class="share">
-                <a href="https://www.linkedin.com/in/davishankargaur/" class="fab fa-linkedin" target="_blank"></a>
-                <a href="https://github.com/Davishankar" class="fab fa-github" target="_blank"></a>
-                <a href="mailto:davishankar9822@gmail.com" class="fas fa-envelope" target="_blank"></a>
-                <a href="https://x.com/buggingme10" class="fab fa-twitter" target="_blank"></a>
-            </div>
-        </div>
+<footer class="footer">
+    <div class="wrap">
+        <p>© 2026 Davishankar Gaur</p>
+        <p class="mono">$ exit 0</p>
     </div>
-
-    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by Davishankar Gaur</h1>
-
-</section>
-<!-- footer section ends -->
+</footer>
 
 <!-- resume viewer modal -->
 <div class="resume-modal" id="resume-modal" role="dialog" aria-modal="true" aria-label="Resume" hidden>
     <div class="resume-modal-box">
         <div class="resume-modal-bar">
-            <h3>Resume</h3>
+            <h3>resume.pdf</h3>
             <div class="resume-modal-actions">
                 <a href="./assets/resume/Davishankar_Gaur_Resume.pdf" download="Davishankar_Gaur_Resume.pdf"
                    aria-label="Download resume"><i class="fas fa-download"></i></a>
@@ -518,23 +404,16 @@ contact section ends -->
 </div>
 
 <!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<a href="#home" aria-label="Scroll to top" class="fas fa-angle-up" id="scroll-top"></a>
 
 <!-- ==== JS CDNs ==== -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <!-- main script -->
-<script src="./assets/js/script.js?v=2"></script>
+<script src="./assets/js/script.js?v=7"></script>
 
 </body>
 </html>

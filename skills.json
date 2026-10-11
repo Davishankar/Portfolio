@@ -1,84 +1,101 @@
 [
-
     {
-        "name": "Computer Networks",
-        "icon": "./assets/images/Icons/computer_networks.png"
+        "category": "Offensive tools",
+        "note": "labs & OSCP+ prep",
+        "skills": [
+            { "name": "Kali Linux", "icon": "./assets/images/Icons/kali_linux.svg" },
+            { "name": "Burp Suite", "icon": "./assets/images/Icons/burp_suite.svg" },
+            { "name": "Metasploit", "icon": "./assets/images/Icons/metasploit.svg" },
+            { "name": "Nmap", "icon": "./assets/images/Icons/nmap.svg" },
+            { "name": "Wireshark", "icon": "./assets/images/Icons/wireshark.svg" },
+            { "name": "Gobuster / ffuf", "icon": "./assets/images/Icons/gobuster_ffuf.svg" },
+            { "name": "sqlmap", "icon": "./assets/images/Icons/sqlmap.svg" },
+            { "name": "Hydra", "icon": "./assets/images/Icons/hydra.svg" },
+            { "name": "John the Ripper", "icon": "./assets/images/Icons/john_the_ripper.svg" },
+            { "name": "Hashcat", "icon": "./assets/images/Icons/hashcat.svg" },
+            { "name": "Netcat", "icon": "./assets/images/Icons/netcat.svg" },
+            { "name": "Impacket", "icon": "./assets/images/Icons/impacket.svg" },
+            { "name": "Mimikatz", "icon": "./assets/images/Icons/mimikatz.svg" },
+            { "name": "BloodHound", "icon": "./assets/images/Icons/bloodhound.svg" }
+        ]
     },
     {
-        "name": "Cloud Security",
-        "icon": "./assets/images/Icons/cloud_security.png"
+        "category": "Offensive techniques & training",
+        "note": "hands-on labs",
+        "skills": [
+            { "name": "Web App Security (OWASP Top 10)", "icon": "./assets/images/Icons/owasp.svg" },
+            { "name": "Privilege Escalation", "icon": "./assets/images/Icons/privilege_escalation.svg" },
+            { "name": "Active Directory Attacks", "icon": "./assets/images/Icons/active_directory.svg" },
+            { "name": "TryHackMe", "icon": "./assets/images/Icons/tryhackme.svg" },
+            { "name": "PortSwigger Web Security Academy", "icon": "./assets/images/Icons/portswigger.svg" },
+            { "name": "PentesterLab", "icon": "./assets/images/Icons/pentesterlab.svg" }
+        ]
     },
     {
-        "name": "Identity & Access Management",
-        "icon": "./assets/images/Icons/IAM.png"
-    }, 
-    {
-        "name": "GitHub",
-        "icon": "./assets/images/Icons/Github.png"
+        "category": "Detection & response",
+        "skills": [
+            { "name": "SIEM", "icon": "./assets/images/Icons/siem.svg" },
+            { "name": "Splunk", "icon": "./assets/images/Icons/splunk.svg" },
+            { "name": "SOAR", "icon": "./assets/images/Icons/soar.svg" },
+            { "name": "Incident Response", "icon": "./assets/images/Icons/Incident_response.png" },
+            { "name": "Endpoint Detection & Response", "icon": "./assets/images/Icons/EDR.png" },
+            { "name": "CrowdStrike", "icon": "./assets/images/Icons/Crowdstrike.png" },
+            { "name": "Log Analysis", "icon": "./assets/images/Icons/log_analysis.svg" }
+        ]
     },
     {
-        "name": "Qualys",
-        "icon": "./assets/images/Icons/qualys.png"
+        "category": "Vulnerability & data protection",
+        "skills": [
+            { "name": "Vulnerability Assessment", "icon": "./assets/images/Icons/Vulnerability_assessment.png" },
+            { "name": "Qualys", "icon": "./assets/images/Icons/qualys.svg" },
+            { "name": "Patch Management", "icon": "./assets/images/Icons/patch_management.svg" },
+            { "name": "Data Loss Prevention", "icon": "./assets/images/Icons/DLP.png" },
+            { "name": "Netskope (CASB)", "icon": "./assets/images/Icons/netskope_casb.svg" },
+            { "name": "Mimecast (Email Security)", "icon": "./assets/images/Icons/mimecast.png" }
+        ]
     },
     {
-        "name": "Mimecast",
-        "icon": "./assets/images/Icons/mimecast.png"
+        "category": "Cloud & network",
+        "skills": [
+            { "name": "AWS", "icon": "./assets/images/Icons/amazon.png" },
+            { "name": "Cloud Security", "icon": "./assets/images/Icons/cloud_security.png" },
+            { "name": "AWS GuardDuty", "icon": "./assets/images/Icons/aws_guardduty.svg" },
+            { "name": "AWS CloudFormation", "icon": "./assets/images/Icons/aws_cloudformation.svg" },
+            { "name": "Identity & Access Management", "icon": "./assets/images/Icons/IAM.png" },
+            { "name": "Computer Networks", "icon": "./assets/images/Icons/computer_networks.png" },
+            { "name": "Firewalls & IDS/IPS", "icon": "./assets/images/Icons/firewall_ids.svg" },
+            { "name": "VPN & IPSec", "icon": "./assets/images/Icons/vpn_ipsec.svg" },
+            { "name": "TCP/IP, DNS & TLS", "icon": "./assets/images/Icons/tcpip_dns.svg" }
+        ]
     },
     {
-        "name": "AWS",
-        "icon": "./assets/images/Icons/amazon.png"
+        "category": "GRC & compliance",
+        "skills": [
+            { "name": "Governance, Risk & Compliance", "icon": "./assets/images/Icons/GRC.png" },
+            { "name": "Risk Management", "icon": "./assets/images/Icons/Risk_Management.png" },
+            { "name": "ISO 27001", "icon": "./assets/images/Icons/iso27001.svg" },
+            { "name": "NIST CSF", "icon": "./assets/images/Icons/nist_csf.svg" },
+            { "name": "PCI DSS", "icon": "./assets/images/Icons/pci_dss.svg" },
+            { "name": "HIPAA", "icon": "./assets/images/Icons/hipaa.svg" },
+            { "name": "GDPR", "icon": "./assets/images/Icons/gdpr.svg" },
+            { "name": "FedRAMP", "icon": "./assets/images/Icons/fedramp.svg" }
+        ]
     },
     {
-        "name": "Netskope",
-        "icon": "./assets/images/Icons/netskope.png"
-    },
-    {
-        "name": "Docker",
-        "icon": "./assets/images/Icons/Docker.png"
-    },
-    {
-        "name": "Crowdstrike",
-        "icon": "./assets/images/Icons/Crowdstrike.png"
-    },
-    {
-        "name": "SQL",
-        "icon": "./assets/images/Icons/mysql.png"
-    },
-    {
-        "name": "Data Loss Prevention",
-        "icon": "./assets/images/Icons/DLP.png"
-    },
-    {
-        "name": "Risk Management",
-        "icon": "./assets/images/Icons/Risk_Management.png"
-    },
-    {
-        "name": "Governance Risk & Compliance",
-        "icon": "./assets/images/Icons/GRC.png"
-    },
-    {
-        "name": "Incident Response",
-        "icon": "./assets/images/Icons/Incident_response.png"
-    },
-    {
-        "name": "Endpoint Detection & Response",
-        "icon": "./assets/images/Icons/EDR.png"
-    },
-    {
-        "name": "Microsoft Office",
-        "icon": "./assets/images/Icons/Outlook.png"
-    },
-    {
-        "name": "Java",
-        "icon": "./assets/images/Icons/java.png"
-    },
-    {
-        "name": "Python",
-        "icon": "./assets/images/Icons/python.png"
-    }, 
-    {
-        "name": "Vulnerability Assessment",
-        "icon": "./assets/images/Icons/Vulnerability_assessment.png"
+        "category": "Languages, automation & platforms",
+        "skills": [
+            { "name": "Python", "icon": "./assets/images/Icons/python.png" },
+            { "name": "Bash", "icon": "./assets/images/Icons/bash.svg" },
+            { "name": "PowerShell", "icon": "./assets/images/Icons/powershell.svg" },
+            { "name": "SQL", "icon": "./assets/images/Icons/sql.svg" },
+            { "name": "Java", "icon": "./assets/images/Icons/java.png" },
+            { "name": "JavaScript", "icon": "./assets/images/Icons/javascript.svg" },
+            { "name": "Flask", "icon": "./assets/images/Icons/flask.svg" },
+            { "name": "Docker", "icon": "./assets/images/Icons/Docker.png" },
+            { "name": "GitHub", "icon": "./assets/images/Icons/Github.png" },
+            { "name": "Linux", "icon": "./assets/images/Icons/linux.svg" },
+            { "name": "Windows", "icon": "./assets/images/Icons/windows.svg" },
+            { "name": "Microsoft Office", "icon": "./assets/images/Icons/Outlook.png" }
+        ]
     }
-    
 ]
