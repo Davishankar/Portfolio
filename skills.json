@@ -90,7 +90,6 @@
             { "name": "SQL", "icon": "./assets/images/Icons/sql.svg" },
             { "name": "Java", "icon": "./assets/images/Icons/java.png" },
             { "name": "JavaScript", "icon": "./assets/images/Icons/javascript.svg" },
-            { "name": "Flask", "icon": "./assets/images/Icons/flask.svg" },
             { "name": "Docker", "icon": "./assets/images/Icons/Docker.png" },
             { "name": "GitHub", "icon": "./assets/images/Icons/Github.png" },
             { "name": "Linux", "icon": "./assets/images/Icons/linux.svg" },
